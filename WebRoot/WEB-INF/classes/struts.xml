@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocatin"
+		value="false">
+	</constant>
+	<constant name="struts.devMode" value="false"></constant>
+
+	<package name="default" extends="struts-default">
+		<action name="Marksheet" class="com.action.MarksheetAction">
+			<result name="add">/Marksheet.jsp</result>
+			<result name="success">/Marksheet.jsp</result>
+			<result name="input">/Marksheet.jsp</result>
+		</action>
+	</package>
+</struts>
